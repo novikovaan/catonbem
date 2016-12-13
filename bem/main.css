@@ -1,0 +1,81 @@
+@import "normilize.css";
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic');
+.container{
+	width: 1280px;
+	background: #f4f4f4;
+	margin: auto;
+	font-family: 'Poiret One', cursive;
+	color: #5b4134;
+	display: flex;
+	flex-direction: column;
+}
+
+.header{
+	display: flex;
+	width: 100%;
+	height: 60px;
+	background: #e9e0d6;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo{
+	margin-left: 20px; 
+	width: 300px;
+	height: 60px;
+	background: url(gav-logo.png);
+}
+
+.menu{
+	list-style: none;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-around;
+}
+
+.menu__link{
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    line-height: 30px;
+    color: #5b4134;
+}
+.menu__link:hover{
+	background: #bda58f;
+}
+@keyframes button{
+ 	from{
+ 		background: none;
+ 	}
+ 	to{
+		background: #b9cbdd;
+ 	}
+}
+.button{
+	display: block;
+	border: 1px solid #5b4134;
+	padding: 20px; 
+	text-decoration: none;
+	transition: 3s;
+	margin-bottom: 1em;
+	color: #5b4134;
+}
+.button:hover{
+	animation-name: button;
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	
+}
+.footer{
+	height: 30px;
+	text-align: center;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	padding: 1em;
+	background: #e9e0d6;
+}
+.footer__author{
+	padding-right: 1em;
+}

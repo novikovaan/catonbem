@@ -1,0 +1,40 @@
+@import "main.css";
+.gallery{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.gallery__photos{
+	width: 400px;
+	height: 400px;
+	margin-right: -9px;
+	margin-left: 0;  
+	padding: .5em;
+	animation-name: puffIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes puffIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2,2);
+    filter: blur(2px);
+  }
+
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1,1);
+    filter: blur(0px);
+  }
+}
+.gallery__photos_last{
+	margin-bottom: 40px;
+}
+.gallery__header{
+	width: 100%;
+	text-align: center;
+}
